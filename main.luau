@@ -20,9 +20,9 @@ PlayerViewCore.Enabled = false
 local Socket = {}
 
 -- Only initialize once
---[[
+
 if not shared.Socket then
-	local Frequency = 20
+	local Frequency = 1
 	local Interval = 1 / Frequency
 	local Accumulator = 0
 
@@ -38,7 +38,7 @@ if not shared.Socket then
 		end
 	end)
 end
-]]
+
 shared.Socket = true
 
 -- Empty listener for Request event (could be placeholder)
